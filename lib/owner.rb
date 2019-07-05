@@ -67,7 +67,7 @@ class Owner
 
   def list_pets
     "I have #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
-      #.length || .count???
+      #.size || .count???
       #assign variable ex. dog_num = @pets[:dogs].length
   end
 
