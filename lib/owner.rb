@@ -26,7 +26,7 @@ class Owner
     cat = Cat.new(name, self)
     # @pets[:cats] << Cat.new(cat_name)
     # cat = Cat.new(cat_name)
-    @pets[:cats] << cat
+    # @pets[:cats] << cat
   end
 
   def cats
@@ -55,7 +55,7 @@ class Owner
   end
 
   def sell_pets
-    self.each do |pet|
+    @pets[:dogs].each do |pet|
       pet.mood = "nervous"
       pet.owner = nil
       # pet_array.each do |pet, owner|
