@@ -59,7 +59,7 @@ class Owner
       pet.mood = "nervous"
       pet.owner = nil
 
-      @pets[:cats].each do |pet|
+    @pets[:cats].each do |pet|
         pet.mood = "nervous"
         pet.owner = nil
       # pet_array.each do |pet, owner|
