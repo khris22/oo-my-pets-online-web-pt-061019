@@ -55,7 +55,8 @@ class Owner
   end
 
   def sell_pets
-    @pets[:dogs].each do |pet|
+    @pets.each do |pet, instance|
+      pet == dogs || cats
       pet.mood = "nervous"
       pet.owner = nil
       # pet_array.each do |pet, owner|
